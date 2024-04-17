@@ -1,3 +1,21 @@
 # shell script
 **steps:**
+* create git account and login
 * create repo in Github
+* clone repo to local machine
+```
+git add <file-name>
+```
+* commit chnages with some message for your ref
+```
+git commit "some-message"
+```
+* push the changes to git
+```
+git push -u origin main
+```
+* To add,commit,push all chnages at a time
+```
+git add. ; git commit "demo-commit" ; git push -u origin name
+```
+
