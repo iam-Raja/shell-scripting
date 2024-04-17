@@ -1,1 +1,2 @@
-hi, hello newyork
+#!/bin/bash
+echo "hi, hello newyork"
