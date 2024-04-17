@@ -1,6 +1,6 @@
 #!/bin/bash
-x=raja
-y=sagar
+x=$1
+y=$2
 echo "hi, hello newyork"
 echo "$x:: hi $y"
 echo "$y:: hello $x"
