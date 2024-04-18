@@ -9,3 +9,4 @@ then
 echo "you are super user, installed"
 else
 echo "switch to root....proceed....."
+fi
