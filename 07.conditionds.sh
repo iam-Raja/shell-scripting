@@ -10,4 +10,4 @@ then
 else
     echo "given no is $x is!=100"
 
-if
+fi
