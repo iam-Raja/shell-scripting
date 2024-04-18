@@ -8,3 +8,5 @@ echo "given is $x is=45"
 else
 echo "given no is $x is!=45"
 fi
+
+# -gt, -lt, -eq, -ge, -le
