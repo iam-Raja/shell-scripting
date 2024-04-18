@@ -7,5 +7,5 @@ echo "home dir of current user:$HOME"
 echo "which user is runnning script:$USER"
 echo "hostname:$HOSTNAME"
 echo "PID of current script:$$"
-sleep 50
-echo "PID of last background scripr:$!"
+#sleep 50
+#echo "PID of last background scripr:$!"
