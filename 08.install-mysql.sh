@@ -22,7 +22,7 @@ fi
 
 if [$USERID -eq 0]
 then
-echo "you are super user, installed"
+echo "you are super user"
 else
 echo "switch to root....proceed....."
 fi
