@@ -15,7 +15,7 @@ no2=$2
 if [$no -eq $no2]
 then echo " both $no1 and $no2 are eua1"
 else echo " given $no1 and $no2 are not eua1"
-if
+fi
 
 
 # -gt, -lt, -eq, -ge, -le
