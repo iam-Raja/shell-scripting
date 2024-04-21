@@ -5,7 +5,7 @@ script_name=$(echo $0|cut -d "." -f1)
 log_file=/tmp/$script_name-$Timestamp.log
 
 validate(){
-    if [ $? -ne 0 ]
+    if [ $1 -ne 0 ]
     then echo "$2 is failed"
     exit 1
     else echo " $2 is success "
