@@ -2,10 +2,10 @@
 
 echo "Enter username::"
 # -s to hide
-read -s USERNAME
+read -s usernsme
 
 echo "Enter password::"
 
-read -s PASSWORD
+read -s password
 
-echo "username:$USERNAME and password:$PASSWORD"
+echo "username:$username and password:$password"
