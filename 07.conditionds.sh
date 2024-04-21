@@ -12,7 +12,7 @@ fi '
 no1=$1
 no2=$2
 
-if [$no -eq $no2]
+if [ $no1 -eq $no2 ]
 then 
 echo " both $no1 and $no2 are eua1"
 else 
