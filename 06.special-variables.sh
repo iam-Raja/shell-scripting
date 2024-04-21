@@ -2,6 +2,7 @@
 
 echo "all values:$@"
 echo "no of values passsed:$#"
+echo "script name:$0"
 echo "current dir:$PWD"
 echo "home dir of current user:$HOME"
 echo "which user is runnning script:$USER"
