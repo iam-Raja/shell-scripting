@@ -18,7 +18,7 @@ validate "$?" " installing mysql"
 dnf install git -y &>>$log_file
 validate "$?" " installing git"
 
-if [$USERID -ne 0]
+if [ $USERID -ne 0 ]
 then
 echo "switch to root....proceed....."
 else
