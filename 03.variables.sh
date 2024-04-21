@@ -2,7 +2,7 @@
 
 echo "Enter username::"
 # -s to hide
-read -s usernsme
+read -s username
 
 echo "Enter password::"
 
