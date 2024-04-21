@@ -1,28 +1,22 @@
 #!/bin/bash
 USERID=$(id -u)
 
+validate(){
+    if [ $? -ne 0]
+    then echo "$2 is failed"
+    exit 1
+    else echo " $2 is success "
+}
 dnf install mysql -y
-if [ $? -ne 0]
-then
-echo "mysql install failed"
-exit 1
-else
-echo "mysql installed successfully"
-fi
+
+validate "$?" " installing mysql"
 
 dnf install git -y
+validate "$?" " installing git"
 
-if [ $? -ne 0]
+if [$USERID -ne 0]
 then
-echo "git install failed"
-exit 1
-else
-echo "git installed successfully"
-fi
-
-if [$USERID -eq 0]
-then
-echo "you are super user"
-else
 echo "switch to root....proceed....."
+else
+echo "u r super user"
 fi
