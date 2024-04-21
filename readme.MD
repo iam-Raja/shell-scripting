@@ -3,6 +3,9 @@
 * create git account and login
 * create repo in Github
 * clone repo to local machine
+```
+git clone <repo -name>
+```
 * add the file to git so git can track(before save ur file)
 ```
 git add <file-name>
