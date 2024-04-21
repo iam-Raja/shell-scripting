@@ -1,7 +1,7 @@
 #!/bin/bash
 USERID=$(id -u)
 Timestamp=$(date +%F-%H-%M-%S)
-script_name=$($0|cut -d "." -f1)
+script_name=$(echo $0|cut -d "." -f1)
 log_file=/tmp/$script_name-$Timestamp.log
 
 validate(){
