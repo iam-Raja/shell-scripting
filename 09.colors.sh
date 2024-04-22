@@ -28,6 +28,7 @@ validate "$?" " installing kube"
 if [ $USERID -ne 0 ]
 then
 echo "switch to root....proceed....."
+exit 1
 else
 echo "u r super user"
 fi
