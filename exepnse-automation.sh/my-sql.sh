@@ -4,9 +4,7 @@ R="\e[31m"
 G="\e[32m"
 
 if [ $USERID -ne 0 ]
-then echo -e " $R switch to root user $N"
+then echo -e " $R switch to root user $N "
 exit 1
-else echo " u r rot user" 
+else echo " u r rot user " 
 fi
-
-echo "aal good"
