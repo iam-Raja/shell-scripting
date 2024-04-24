@@ -19,13 +19,18 @@ validate (){
     else echo -e " $2 ...$G success $N "
     fi
 }
-dnf install nginx -y &>$log_file
-validate $1 "installing nginx"
-systemctl enable nginx
-validate $1 "enabling nginx"
-systemctl start nginx
-validate $1 "starting nginx"
-rm -rf /usr/share/nginx/html/*
-curl -o /tmp/frontend.zip https://expense-builds.s3.us-east-1.amazonaws.com/expense-frontend-v2.zip
-unzip /tmp/frontend.zip
- vim /etc/nginx/default.d/expense.conf
+
+dnf module disable nodejs -y &>>$log_file
+validate $? " disabling default nodejs"
+dnf module enable nodejs:20 -y &>?$log_file
+validate $? " enabling nodejs"
+dnf install nodejs -y &>>$log_file
+validate $? " installing nodejs"
+
+id expense  &>>$log_file
+if [ $? -ne 0 ]
+then useradd expense  &>>$log_file
+validate $? "adding user expense"
+else
+echo -e "expense user is existing $Y ...skipping $N"
+fi
