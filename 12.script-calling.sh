@@ -1,6 +1,6 @@
 #!/bin/bash
 
-course=devops from current scriptr 12
+course="devops from current scriptr 12"
 
 echo "Before calling other script, calling::$course"
 echo "PID of current script::$$"
