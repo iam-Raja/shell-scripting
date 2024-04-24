@@ -6,4 +6,4 @@ echo "Before calling other script, calling::$course"
 echo "PID of current script::$$"
 
 source ./13.calling-demo-script.sh
-echo "after calling other script, calling: $course"
+echo "after calling other script, calling::$course"
