@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Check if an input file is provided
-# if [ "$#" -ne 1 ]; then
-#     echo "Usage: $0"
-#     exit 1
-# fi
+if [ "$#" -ne 1 ]; then
+    echo "Please provide the file name via Argument"
+    exit 1
+fi
 
 # Read the filename from the command line argument
 input_file="$1"
