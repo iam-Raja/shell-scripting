@@ -2,9 +2,10 @@
 
 source_directory=/tmp/old_logs
 
-R="/e[31m"
-G="/e[32m"
-N="/e[0m"
+R="\e[31m"
+G="\e[32m"
+N="\e[0m"
+Y="\e[33m"
 
 if [ -d $source_directory ] #-d dir it will check dir exist or not
 then echo -e "$G $source_directory exists $N"
