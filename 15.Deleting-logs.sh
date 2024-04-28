@@ -16,7 +16,8 @@ files=$(find $source_directory -name ".log" -mtime +14) #searching log in dir mo
 
 #IFS=internal field separator by line
 while IFS= read -r line 
-do echo "deleting files: $line"
+do 
+echo "deleting files: $line"
 rm -rf $line
 done <<< $files
 
