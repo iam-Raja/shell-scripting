@@ -7,7 +7,7 @@
 # fi
 
 # Read the filename from the command line argument
-#input_file="$1"
+input_file="$1"
 
 # Transpose the columns to rows
 awk '
