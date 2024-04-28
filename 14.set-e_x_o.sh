@@ -8,6 +8,7 @@ set -e #exit when script error
 
 if [ $USERID -ne 0 ]
 then echo -e "$R Switch to super user $N"
+exit 1
 else echo -e " $G U R Super User $N"
 fi
 
