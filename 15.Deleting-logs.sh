@@ -13,7 +13,7 @@ else echo -e "$R $source_directory not exist $N"
 exit 1
 fi
 
-files=$(find $source_directory -name ".log" -mtime +14) #searching log in dir more than 14 days
+files=$(find $source_directory -name "*.log" -mtime +14) #searching log in dir more than 14 days
 
 #IFS=internal field separator by line
 while IFS= read -r line 
