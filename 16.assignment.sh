@@ -1,7 +1,7 @@
 #!/bin/bash
 R="\e[31m"
 N="\e[om"
-# Check if an input file is provided
+# Check if an input file is provided as argument
 if [ "$#" -ne 1 ]; then
     echo -e "$R Please provide the file name via Argument $N"
     exit 1
