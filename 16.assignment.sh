@@ -2,7 +2,7 @@
 
 # Check if an input file is provided
 if [ "$#" -ne 1 ]; then
-    echo "Usage: $0 file.txt"
+    echo "Usage: $0"
     exit 1
 fi
 
